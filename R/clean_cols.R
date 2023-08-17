@@ -32,7 +32,7 @@ clean_cols <- function(df) {
     }
   }
 
-  df <- df |>
+  df |>
     dplyr::select(-tidyselect::contains("...")) |>
     dplyr::select(-tidyselect::contains("null"))
 }
